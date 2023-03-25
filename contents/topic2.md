@@ -6,4 +6,4 @@
 
 # Topic 2
 
-> This is a placeholder page - more content to be added.
+> This is a placeholder content page - more content to be added.
