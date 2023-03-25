@@ -1,7 +1,7 @@
 name: MarkBind Action
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -12,5 +12,7 @@ jobs:
       - name: Build & Deploy MarkBind site
         uses: yucheng11122017/markbind-action@upgradeNode16
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: 'development'
+          token: ${{ secrets.SURGE_TOKEN }}
+          service: 'surge'
+          purpose: 'pr-preview'
+          domain: 'mb-test.surge.sh'
