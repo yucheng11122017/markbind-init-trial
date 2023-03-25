@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Unpublish from Surge
-    uses: yucheng11122017/markbind-action@upgradeNode16/.github/workflows/unpublish-preview.yml@master
+    uses: yucheng11122017/markbind-action/.github/workflows/unpublish-preview.yml@upgradeNode16
     with:
       domain: "mb-test.surge.sh"
     secrets:
