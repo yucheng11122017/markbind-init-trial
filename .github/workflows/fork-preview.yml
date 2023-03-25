@@ -9,7 +9,7 @@ jobs:
   on-success:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Deploying to Surge
-    uses: yucheng11122017/markbind-action@upgradeNode16/.github/workflows/fork-preview.yml@master
+    uses: yucheng11122017/markbind-action/.github/workflows/fork-preview.yml@upgradeNode16
     with:
       domain: "mb-test.surge.sh"
     secrets:
