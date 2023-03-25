@@ -1,0 +1,20 @@
+name: Build Fork PR
+
+# read-only
+# no access to secrets
+on:
+  pull_request:
+    branches:
+      - main
+
+# cancel multiple runs at the same time, can be removed if you don't want it
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Fork PR
+    uses: yucheng11122017/markbind-action@upgradeNode16/.github/workflows/fork-build.yml@master
+    with:
+      version: "3.1.1"
