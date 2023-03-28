@@ -1,0 +1,16 @@
+name: Unpublish preview site
+
+on:
+  pull_request_target:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Unpublish from Surge
+    uses: yucheng11122017/markbind-action/.github/workflows/unpublish-preview.yml@replaceSetOutput
+    with:
+      domain: "mb-test.surge.sh"
+    secrets:
+      token: ${{ secrets.SURGE_TOKEN }}
