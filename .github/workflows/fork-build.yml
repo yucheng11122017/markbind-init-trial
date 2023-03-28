@@ -5,7 +5,7 @@ name: Build Fork PR
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 # cancel multiple runs at the same time, can be removed if you don't want it
 concurrency:
