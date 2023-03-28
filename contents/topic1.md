@@ -6,4 +6,4 @@
 
 # Topic 1
 
-> This is a page - more content to be added.
+> This is a page - content to be added.
