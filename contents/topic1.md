@@ -6,4 +6,4 @@
 
 # Topic 1
 
-> This is a f -  to b.
+> This is a -  to b.
