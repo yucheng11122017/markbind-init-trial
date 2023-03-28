@@ -6,4 +6,4 @@
 
 # Topic 1
 
-> This is a page -  content to b.
+> This is a page -  to b.
