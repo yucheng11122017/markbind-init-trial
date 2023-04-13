@@ -1,0 +1,16 @@
+name: MarkBind Action
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build & Deploy MarkBind site
+        uses: yucheng11122017/markbind-action@replaceSetOutput
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: '4.0.0'
