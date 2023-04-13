@@ -1,7 +1,7 @@
 name: MarkBind Action
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
@@ -12,8 +12,7 @@ jobs:
       - name: Build & Deploy MarkBind site
         uses: yucheng11122017/markbind-action@replaceSetOutput
         with:
+          token: ${{ secrets.SURGE_TOKEN }}
           service: 'surge'
           purpose: 'pr-preview'
-          version: '4.0.0'
-          token: ${{ secrets.SURGE_TOKEN }}
           domain: 'mb-test.surge.sh'
