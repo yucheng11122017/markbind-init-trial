@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build & Deploy MarkBind site
-        uses: yucheng11122017/markbind-action@replaceSetOutput
+        uses: yucheng11122017/markbind-action@upgradeSetupNodeVersion
         with:
           token: ${{ secrets.SURGE_TOKEN }}
           service: 'surge'
